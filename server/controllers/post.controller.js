@@ -35,7 +35,7 @@ export function addPost(req, res) {
   newPost.title = sanitizeHtml(newPost.title);
   newPost.name = sanitizeHtml(newPost.name);
   newPost.content = sanitizeHtml(newPost.content);
-
+  newPost.voteNb = 0;
   newPost.slug = slug(newPost.title.toLowerCase(), { lowercase: true });
   newPost.cuid = cuid();
   newPost.save((err, saved) => {
@@ -78,7 +78,7 @@ export function deletePost(req, res) {
     });
   });
 }
-
+//Edit a post
 export function editPost(req, res) {
   Post.update({ cuid: req.params.cuid }, req.body.post).exec((err, post) => {
     if (err) {

@@ -17,8 +17,8 @@ import { getPost } from '../../PostReducer';
 import { getShowEditPost } from '../../../App/AppReducer';
 
 export class PostDetailPage extends React.Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
     this.state = {
       name: this.props.post.name,
       title: this.props.post.title,
