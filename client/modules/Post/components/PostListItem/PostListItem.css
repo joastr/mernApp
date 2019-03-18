@@ -97,7 +97,7 @@ textarea {
   font-style: italic;
 }
 
-.post-action a:hover{
+.post-action a:hover, .thumbUp-btn:hover, .thumbDown-btn:hover {
   color: #EF5350;
 }
 
@@ -117,4 +117,15 @@ textarea {
 .post-detail .post-desc{
   font-size: 16px;
   color: #555;
+}
+
+span {
+  margin: 0 15px;
+}
+
+.thumbUp-btn, .thumbDown-btn {
+    box-shadow: 2px 2px 3px rgba( 0,0,0,0.5);
+    padding: 4px 8px;
+    border-radius: 50%;
+    line-height: 4px;
 }
