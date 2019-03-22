@@ -20,7 +20,7 @@
 
 .site-title a {
   text-decoration: none;
-  color: #FFF;
+  color: navy
 }
 
 .add-post-button {
@@ -31,10 +31,11 @@
   text-decoration: none;
   border-radius: 1000px;
   float: right;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
 .language-switcher {
-  background: rgba(0, 0, 0, 0.1);
+  background:  rgb(69, 193, 250);
 }
 
 .language-switcher ul {
@@ -49,15 +50,19 @@
   margin: 10px;
   padding: 5px;
   cursor: pointer;
-  color: #fff;
+  color: rgb(85, 85, 85);
 }
 
-.language-switcher li:first-child {
-  color: rgba(255, 255, 255, 0.7);
+.language-switcher >ul > li:first-child {
+  color: rgb(85, 85, 85);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+  border-radius: 1000px;
+  padding: 7px;
+
 }
 
 .selected {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgb(85, 85, 85);
 }
 
 @media (max-width: 767px){
